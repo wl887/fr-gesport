@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frågesport</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+    <div id="confetti-frame">
+
+        <!-- STARTSIDA -->
+        <div id="game-start" class="box">
+
+            <h1>Världens coolaste frågesport</h1>
+
+            <p>Testa dina kunskaper i vår frågesport!</p>
+
+            <label for="name-input">Ditt namn:</label>
+
+            <input
+                type="text"
+                id="name-input"
+                placeholder="Skriv ditt namn"
+            >
+
+            <button id="start-game-btn">
+                Starta spelet
+            </button>
+
+        </div>
+
+
+        <!-- SPELET -->
+        <div id="game-in-progress" class="box">
+
+            <div class="top-info">
+
+                <p>
+                    Namn:
+                    <span id="player-name"></span>
+                </p>
+
+                <p>
+                    Poäng:
+                    <span id="player-points">0</span>
+                </p>
+
+            </div>
+
+            <h2 id="question-field">
+                Frågan visas här
+            </h2>
+
+
+            <div class="answers">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="answers"
+                        value="1"
+                    >
+                    <span id="answer-1-field">
+                        Svar 1
+                    </span>
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="answers"
+                        value="2"
+                    >
+                    <span id="answer-2-field">
+                        Svar 2
+                    </span>
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="answers"
+                        value="3"
+                    >
+                    <span id="answer-3-field">
+                        Svar 3
+                    </span>
+                </label>
+
+            </div>
+
+            <button id="user-answer-btn">
+                Nästa fråga
+            </button>
+
+        </div>
+
+
+        <!-- RESULTAT -->
+        <div id="game-feedback" class="box">
+
+            <h2>Resultat</h2>
+
+            <p>Här visas ditt resultat.</p>
+
+            <h3>
+                Poäng:
+                <span id="total-player-points"></span>
+            </h3>
+
+            <button id="restart-game-btn">
+                Starta om spelet
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
